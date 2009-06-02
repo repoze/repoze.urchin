@@ -16,7 +16,7 @@ the middleware provided by this pacakge, and which supplies your
 Google Analytics account ID::
 
   [filter:urchin]
-  use = repoze.urchin:middleware
+  use = egg:repoze.urchin#middleware
   account = UA-1234567-8
 
 Then add that filter to your pipeline::
@@ -26,6 +26,8 @@ Then add that filter to your pipeline::
       ...
       urchin
       <your appname>
+
+See ``example.ini`` for a working example.
  
 
 Indices and tables
