@@ -24,3 +24,7 @@ class UrchinMiddleware(object):
             after = (URCHIN_TAGS % self.account) + '</body>'
             resp.body = body.replace(before, after, 1)
         return resp(environ, start_response)
+
+
+def make_middleware(app, global_conf=None, **kw):
+    return UrchinMiddleware(app, kw['account'])
