@@ -1,0 +1,13 @@
+README.txt
+setup.py
+repoze/__init__.py
+repoze.urchin.egg-info/PKG-INFO
+repoze.urchin.egg-info/SOURCES.txt
+repoze.urchin.egg-info/dependency_links.txt
+repoze.urchin.egg-info/entry_points.txt
+repoze.urchin.egg-info/namespace_packages.txt
+repoze.urchin.egg-info/not-zip-safe
+repoze.urchin.egg-info/requires.txt
+repoze.urchin.egg-info/top_level.txt
+repoze/urchin/__init__.py
+repoze/urchin/tests.py

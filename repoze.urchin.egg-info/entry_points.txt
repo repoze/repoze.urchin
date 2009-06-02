@@ -1,0 +1,3 @@
+        [paste.filter_app_factory]
+        middleware = repoze.urchin:make_middleware
+      

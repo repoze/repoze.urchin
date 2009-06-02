@@ -1,0 +1,7 @@
+repoze.urchin Changelog
+=======================
+
+0.1 (unreleaesd)
+----------------
+
+- Initial release.
