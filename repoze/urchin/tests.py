@@ -48,6 +48,15 @@ _uacct = "123"; urchinTracker();
         self.assertEqual(self._started[0], '200 OK')
         self.failUnless(('Content-Type', 'text/html') in self._started[1])
 
+    def test_response_HEAD_request(self):
+        app = DummyApp(headers=[('Content-Type', 'text/html')],
+                                body='<html><body></body></html>')
+        mw = self._makeOne(app)
+        environ = self._makeEnviron(REQUEST_METHOD='HEAD')
+        app_iter = mw(environ, self._startResponse)
+        self.assertEqual(list(app_iter), ['<html><body></body></html>'])
+        self.assertEqual(self._started[0], '200 OK')
+        self.assertEqual(self._started[1], [('Content-Type', 'text/html')])
 
 class DummyApp:
 
