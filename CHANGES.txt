@@ -1,10 +1,10 @@
 repoze.urchin Changelog
 =======================
 
-Unreleased
-----------
+0.2 (2011-10-10)
+----------------
 
-- Changed urchin javascript for new async tracking code. See:
+- Replaced urchin javascript with new async tracking code. See:
 
     http://www.google.com/support/googleanalytics/bin/answer.py?answer=174090
 
