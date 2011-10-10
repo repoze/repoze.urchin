@@ -4,6 +4,12 @@ repoze.urchin Changelog
 Unreleased
 ----------
 
+- Changed urchin javascript for new async tracking code. See:
+
+    http://www.google.com/support/googleanalytics/bin/answer.py?answer=174090
+
+  Note that the script is now inserted at the end of the <head> tag.
+
 - Added bypass for HEAD requests. This is a workaround for an assertion in
   webob.Response that doesn't let you set the body on a response if the request
   method is 'HEAD'. This behavior on the part of webob is actually bogus, as
