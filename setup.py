@@ -12,7 +12,7 @@
 #
 ##############################################################################
 
-__version__ = '0.3dev'
+__version__ = '0.3.dev0'
 
 import os
 
@@ -36,6 +36,10 @@ setup(name='repoze.urchin',
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Programming Language :: Python :: Implementation :: PyPy",
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: Dynamic Content",
         "Topic :: Internet :: WWW/HTTP :: WSGI",
